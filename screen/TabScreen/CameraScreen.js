@@ -1,10 +1,10 @@
 import React from 'react';
 import { Text } from 'react-native-paper';
 
-function CameraScreen({navigation}) {
+function CameraScreen({ navigation }) {
   return (
     <>
-      <Text style={{textAlign:"center", fontSize:50, paddingTop:200}}>Camera Screen</Text>
+      <Text style={{ textAlign: "center", fontSize: 50, paddingTop: 200 }}>Camera Screen</Text>
     </>
   );
 }

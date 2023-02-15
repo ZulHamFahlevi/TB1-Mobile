@@ -1,62 +1,62 @@
 import React from 'react';
-import { Appbar,List, Avatar} from 'react-native-paper';
+import { Appbar, List, Avatar } from 'react-native-paper';
 
-function SettingScreen({navigation}) {
+function SettingScreen({ navigation }) {
   return (
     <>
       <Appbar.Header>
-        <Appbar.BackAction onPress={() => navigation.goBack()}/>
+        <Appbar.BackAction onPress={() => navigation.goBack()} />
         <Appbar.Content title="Setelan" />
-        <Appbar.Action icon="dots-vertical" onPress={() => {}}/>
+        <Appbar.Action icon="dots-vertical" onPress={() => { }} />
       </Appbar.Header>
-    
-    <List.Item
-      title="Adit"
-      titleStyle={{color: 'black'}}
-      description="Available"
-      descriptionStyle={{color: 'black'}}
-      left={props => <Avatar.Image {...props} source={require('./TabScreen/ChatScreen/avatar.jpg')} size={50}/>}
-      right={props => <List.Icon {...props} icon="qrcode" color='#128C7E' />}/>
-    <List.Item
+
+      <List.Item
+        title="Adit"
+        titleStyle={{ color: 'black' }}
+        description="Available"
+        descriptionStyle={{ color: 'black' }}
+        left={props => <Avatar.Image {...props} source={require('./TabScreen/ChatScreen/avatar.jpg')} size={50} />}
+        right={props => <List.Icon {...props} icon="qrcode" color='#128C7E' />} />
+      <List.Item
         title="Akun"
-        titleStyle={{color: 'black'}}
+        titleStyle={{ color: 'black' }}
         description="Privasi, keamanan, ganti nomor"
-        descriptionStyle={{color: 'black'}}
+        descriptionStyle={{ color: 'black' }}
         left={props => <List.Icon {...props} icon="key" />}
       />
       <List.Item
         title="Chat"
-        titleStyle={{color: 'black'}}
+        titleStyle={{ color: 'black' }}
         description="Tema, wallpaper, riwayat chat"
-        descriptionStyle={{color: 'black'}}
+        descriptionStyle={{ color: 'black' }}
         left={props => <List.Icon {...props} icon="chat-outline" />}
       />
       <List.Item
         title="Notifikasi"
-        titleStyle={{color: 'black'}}
+        titleStyle={{ color: 'black' }}
         description="Pesan, grup dan nada dering panggilan"
-        descriptionStyle={{color: 'black'}}
+        descriptionStyle={{ color: 'black' }}
         left={props => <List.Icon {...props} icon="bell" />}
       />
       <List.Item
         title="Penyimpanan dan data"
-        titleStyle={{color: 'black'}}
+        titleStyle={{ color: 'black' }}
         description="Penggunaan jaringan, unduh otomatis"
-        descriptionStyle={{color: 'black'}}
+        descriptionStyle={{ color: 'black' }}
         left={props => <List.Icon {...props} icon="circle-outline" />}
       />
       <List.Item
         title="Bantuan"
-        titleStyle={{color: 'black'}}
+        titleStyle={{ color: 'black' }}
         description="Pusat bantuan, hubungi kami, kebijakan privasi"
-        descriptionStyle={{color: 'black'}}
+        descriptionStyle={{ color: 'black' }}
         left={props => <List.Icon {...props} icon="help-circle-outline" />}
       />
       <List.Item
         title="Undang temam"
-        titleStyle={{color: 'black'}}
+        titleStyle={{ color: 'black' }}
         left={props => <List.Icon {...props} icon="account-multiple" />}
-      />  
+      />
     </>
   );
 }

@@ -1,31 +1,31 @@
 import React from 'react';
-import { List, Avatar} from 'react-native-paper';
+import { List, Avatar } from 'react-native-paper';
 
-function PanggilanSreen({navigation}) {
+function PanggilanSreen({ navigation }) {
   return (
-    <>  
+    <>
       <List.Item
         title="Adit"
-        titleStyle={{color: 'black'}}
+        titleStyle={{ color: 'black' }}
         description="Hari ini 19.00"
-        descriptionStyle={{color: 'black'}}
-        left={props => <Avatar.Image {...props} source={require('./ChatScreen/avatar.jpg')} size={50}/>}
-        right={props => <List.Icon {...props} icon="phone" color='#128C7E'/>}
+        descriptionStyle={{ color: 'black' }}
+        left={props => <Avatar.Image {...props} source={require('./ChatScreen/avatar.jpg')} size={50} />}
+        right={props => <List.Icon {...props} icon="phone" color='#128C7E' />}
       />
       <List.Item
         title="Rifki"
-        titleStyle={{color: 'black'}}
+        titleStyle={{ color: 'black' }}
         description="kemarin 04.30"
-        descriptionStyle={{color: 'black'}}
-        left={props => <Avatar.Image {...props} source={require('./ChatScreen/avatar.jpg')} size={50}/>}
+        descriptionStyle={{ color: 'black' }}
+        left={props => <Avatar.Image {...props} source={require('./ChatScreen/avatar.jpg')} size={50} />}
         right={props => <List.Icon {...props} icon="video" color='#128C7E' />}
       />
       <List.Item
         title="Zulham"
-        titleStyle={{color: 'black'}}
+        titleStyle={{ color: 'black' }}
         description="kemarin 19.00"
-        descriptionStyle={{color: 'black'}}
-        left={props => <Avatar.Image {...props} source={require('./ChatScreen/avatar.jpg')} size={50}/>}
+        descriptionStyle={{ color: 'black' }}
+        left={props => <Avatar.Image {...props} source={require('./ChatScreen/avatar.jpg')} size={50} />}
         right={props => <List.Icon {...props} icon="phone" color='#128C7E' />}
       />
 
